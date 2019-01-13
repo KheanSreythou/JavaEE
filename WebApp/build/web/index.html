@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+       <body>
+	<h2>Input Form</h2>
+	<form action="FirstServlet" method="Get">
+		<fieldset>
+			<legend>Personal Particular</legend>
+			Name: <input type = "text" name = "username"><br />
+			Password: <input type = "password" name = "password" /><br />
+			Gender: <input type = "radio" name = "gender" value = "m" checked/>Male
+					<input type = "radio" name = "gender" value = "f" checked/>Female <br />
+			Age: <select name = "age">
+				<option value = "1">&lt; 10 years old</option>
+				<option value = "19">10 to 19 years old</option>
+				<option value = "29">20 to 29 years old</option>
+				<option value = "39">30 to 39 years old</option>
+				<option value = "49">40 to 49 years old</option>
+				<option value = "50">&gt; 50 years old</option>
+			</select>
+		</fieldset>
+		
+		<fieldset>
+			<legend>Languages</legend>
+			<input type = "checkbox" name = "language" value = "java" />Java
+			<input type = "checkbox" name = "language" value = "c" />C/C++
+			<input type = "checkbox" name = "language" value = "cs" />C#
+		</fieldset>
+		
+		<fieldset>
+			<legend>Languages</legend>
+			<input type = "checkbox" name = "language" value = "java" />Java
+			<input type = "checkbox" name = "language" value = "c" />C/C++
+			<input type = "checkbox" name = "language" value = "cs" />C#
+		</fieldset>
+		
+		<fieldset>
+			<legend>Instruction</legend>
+			<textarea rows="5" cols="30" name = "instruction">Enter your instruction here:</textarea>
+		</fieldset>
+		
+		<input type="hidden" name="secret" value = "890" />
+		<input type="submit" value="SEND"/>
+		<input type="reset" value="CLEAR"/>
+            </form>
+        </body>
+</html>
